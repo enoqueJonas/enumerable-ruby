@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Class that holds the module that will be used by enumerable.rb
 module MyEnumerable
   def all?
