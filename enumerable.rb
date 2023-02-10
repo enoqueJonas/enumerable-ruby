@@ -1,8 +1,7 @@
 require_relative './enumerable'
-
+include MyEnumerable
 # class that will create new list
 class MyList
-  include MyEnumerable
   def initialize(*list)
     @list = list
   end
