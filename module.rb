@@ -1,18 +1,18 @@
 # Class that holds the module that will be used by enumerable.rb
 module MyEnumerable
   def all?
-    each { |n| return false unless yield n }
+    each { |e| return false unless yield e }
     true
   end
 
   def any?
-    each { |n| return true if yield n }
+    each { |e| return true if yield e }
     false
   end
 
   def filter
     filtered = []
-    each { |n| filtered.push(n) if yield n }
+    each { |e| filtered.push(n) if yield e }
     filtered
   end
 end
