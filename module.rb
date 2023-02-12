@@ -12,7 +12,7 @@ module MyEnumerable
 
   def filter
     filtered = []
-    each { |e| filtered.push(n) if yield e }
+    each { |e| filtered.push(e) if yield e }
     filtered
   end
 end
